@@ -8,8 +8,7 @@ load_dotenv()
 db_queries = {
     'query_base_population' : """
             SELECT Brand, model, Year, kmDriven, Transmission, FuelType, AskPrice 
-            FROM used_cars 
-            WHERE ROWNUM <= 500"""
+            FROM used_cars"""
 }
 
 def clean_car_data(df):
